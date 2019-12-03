@@ -1,0 +1,35 @@
+val arr = Array(4,2,1,7,8,92)
+
+val n = arr.length
+val i : Int = 0
+val j : Int = 0
+var temp : Int = 0 
+
+def insertionSortLoop(arr :Array[Int]) : Array[Int] = 
+
+{
+      val intArray: Array[Int] = arr.toArray
+          for ( j <- 1 until intArray.length ) 
+          {
+              breakable 
+                {
+                    for ( i <- (1 to j).reverse ) 
+                        {
+                          if (intArray(i-1) < intArray(i)) 
+                          {
+                            break
+                          } 
+                          else 
+                          {
+                              val temp = intArray(i)
+                              intArray(i) = intArray(i-1)
+                              intArray(i-1) = temp
+                          }
+                        }
+                }
+          }
+      intArray.toArray
+}
+
+var sorted = insertionSortLoop(arr)
+println("Sorted Array -> " + sorted.toString() )

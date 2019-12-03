@@ -1,0 +1,42 @@
+val searcharray = Array(5,2,3,1,6,11,9)
+
+
+		5
+		|
+		|
+	------------------------
+	|			|
+	|			|
+	2			6
+----------------	-----------------
+|		|	|		|
+|		|	|		|
+1		3	9		11
+
+1. Inorder (Left,Root,Right) : 1 2 3 5 9 6 11 
+
+Algorithm
+Until all nodes are traversed -
+Step 1 - Recursively traverse left subtree.
+Step 2 - Visit root node.
+Step 3 - Recursively traverse right subtree.
+
+2. Preorder (Root,Left,Right) : 5 2 1 3 6 9 11
+
+Algorithm
+Until all nodes are traversed -
+Step 1 - Visit root node.
+Step 2 - Recursively traverse left subtree.
+Step 3 - Recursively traverse right subtree.
+
+3. Postorder (Left,Right,Root) : 1 3 2 9 11 6 5
+
+Algorithm
+Until all nodes are traversed -
+Step 1 - Recursively traverse left subtree.
+Step 2 - Recursively traverse right subtree.
+Step 3 - Visit root node.
+
+source: 
+https://www.tutorialspoint.com/data_structures_algorithms/tree_traversal.htm
+https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/

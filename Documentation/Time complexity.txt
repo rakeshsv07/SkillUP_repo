@@ -1,0 +1,23 @@
+What is time complexity?
+Time complexity of an algorithm signifies the total time required by the program to run till its completion.
+
+
+logn  -- slower growing than even linear functions
+n  -- grow linearly with the input for n
+nlogn -- faster growing than linear but slower than quadratic
+n^2 -- grows faster than the linear log function
+n^3 -- faster growing than quadartic but slow than exponential
+2^n  -- faster than all of functions except n!
+n! --- fastes of all metioned
+
+Example:
+
+Imagine a classroom of 100 students in which you gave your pen to one person. Now, you want that pen. Here are some ways to find the pen and what the O order is.
+
+O(n): Going and asking each student individually is O(N).
+
+O(log n): Now I divide the class into two groups, then ask: “Is it on the left side, or the right side of the classroom?” Then I take that group and divide it into two and ask again, and so on. Repeat the process till you are left with one student who has your pen. This is what you mean by O(log n).
+
+
+Time complexity source:
+https://www.geeksforgeeks.org/understanding-time-complexity-simple-examples/

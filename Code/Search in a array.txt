@@ -1,0 +1,9 @@
+val searcharray = Array(5,1,3,6,11,88,0)
+
+println(searcharray.mkString("")) //Print elements in array
+
+//Method 1
+searcharray.contains (11)  // to search an element in a given array
+
+// Method 2
+searcharray.find(_ == (86)) // find an element in a given array
